@@ -1,0 +1,158 @@
+/* Reset simple */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    transition: background 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container principal */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(255,255,255,0.2);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+/* Select stylisé */
+label {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+select {
+    margin: 10px 0 30px 0;
+    padding: 12px 20px;
+    font-size: 1em;
+    border-radius: 12px;
+    border: none;
+    background-color: rgba(255,255,255,0.8);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+select:hover {
+    transform: scale(1.05);
+}
+
+/* Blocs-notes */
+.blocks-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Bloc général avec perspective pour flip */
+.note-block {
+    width: 250px;
+    min-height: 180px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px rgba(0,0,0,0.3);
+    position: relative;
+    overflow: visible;
+    font-family: 'Brush Script MT', cursive;
+    color: #333;
+    animation: fadeIn 0.8s ease forwards;
+    border-top: 3px dashed rgba(0,0,0,0.3); /* effet carnet */
+    perspective: 1000px;
+    cursor: grab;
+    transition: transform 0.3s ease;
+}
+
+.note-block.dragging {
+    cursor: grabbing;
+    opacity: 0.8;
+}
+
+/* Conteneur interne pour flip */
+.note-block-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+/* Face avant et arrière */
+.note-block-front,
+.note-block-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.note-block-back {
+    transform: rotateY(180deg);
+    background-color: rgba(0,0,0,0.1);
+    color: #000;
+}
+
+/* Titre dans le bloc */
+.note-block h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+/* Liste sans puces et texte plus grand */
+.note-block ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.note-block ul li {
+    font-size: 1.3em;
+    line-height: 1.5em;
+    cursor: pointer;
+}
+
+/* Hover léger */
+.note-block:hover {
+    transform: translateY(-5px) rotate(-1deg);
+    box-shadow: 6px 6px 20px rgba(0,0,0,0.5);
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+    0% {opacity: 0; transform: translateY(20px);}
+    100% {opacity: 1; transform: translateY(0);}
+}
+
+/* Tooltip */
+#tooltip {
+    position: absolute;
+    padding: 8px 12px;
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    border-radius: 5px;
+    pointer-events: none;
+    display: none;
+    z-index: 1000;
+    transition: opacity 0.2s ease;
+}
