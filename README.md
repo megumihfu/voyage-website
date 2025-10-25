@@ -1,4 +1,4 @@
-# Annuaire de pays interactif
+# Carnet de voyages
 
 Ce projet a été réalisé dans le cadre d'une initiative éducative pour l'association **Parcours Solidaire**. Il s'agit d'un site interactif permettant de découvrir différents pays à travers leurs monuments, activités, plats typiques et paysages naturels.
 
@@ -11,9 +11,9 @@ Ce projet a été réalisé dans le cadre d'une initiative éducative pour l'ass
 ## Fonctionnalités
 
 - Sélection de pays via un menu déroulant.
-- Affichage dynamique des informations par catégorie (présentation, monuments, activités, plats, endroits naturels).
+- Affichage dynamique des informations par catégorie (présentation, monuments, activités, plats, endroits naturels, galerie photos et vidéo dde présentation).
 - Changement automatique du fond d'écran en fonction du pays sélectionné.
-- Affichage d'info-bulles au clic sur un élément pour fournir des informations complémentaires.
+- Affichage d'info-bulles au survol sur un élément pour fournir des informations complémentaires.
 
 ## Technologies utilisées
 - HTML : contient la structure de la page : titre, menu de sélection et conteneur pour les blocs.
@@ -30,7 +30,3 @@ Ce projet a été réalisé dans le cadre d'une initiative éducative pour l'ass
 ## Public cible
 
 Ce projet est principalement destiné aux jeunes participants de l'association Parcours Solidaire, dans un objectif éducatif et ludique.
-
-## Contributions
-
-Le projet peut être enrichi avec de nouveaux pays, catégories ou contenus pédagogiques. Les contributions sont bienvenues dans le cadre de l'amélioration de l'outil éducatif.
