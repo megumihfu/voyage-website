@@ -1,6 +1,9 @@
 # Carnet de voyages
 
-Ce projet a été réalisé dans le cadre d'une initiative éducative pour l'association **Parcours Solidaire**. Il s'agit d'un site interactif permettant de découvrir différents pays à travers leurs monuments, activités, plats typiques et paysages naturels.
+Ce projet a été réalisé dans le cadre d'une initiative éducative pour l'association **Parcours Solidaire**.  
+Il s'agit d'un site interactif permettant de découvrir différents pays à travers leurs monuments, activités, plats typiques et paysages naturels.  
+[Accéder au site](https://megumihfu.github.io/voyage-website/)
+
 
 ## Objectifs
 
