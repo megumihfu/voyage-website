@@ -2,7 +2,7 @@
 
 Ce projet a été réalisé dans le cadre d'une initiative éducative pour l'association **Parcours Solidaire**.  
 Il s'agit d'un site interactif permettant de découvrir différents pays à travers leurs monuments, activités, plats typiques et paysages naturels.  
-[Accéder au site](https://megumihfu.github.io/carnet-voyage/)
+[Le site carnet de voyage](https://parcours-solidiare-dev.github.io/PS-carnet-voyage/)
 
 
 ## Objectifs
