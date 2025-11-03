@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carnet de voyage</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <!-- titre de l'onglet -->
+    <h1>Mon Carnet de Voyage</h1>
+    
+    <!-- selection des pays -->
+    <div class="country-selector">
+        <label for="country-select">📍 Destination : </label>
+        <select id="country-select">
+            <option value="">-- Choisir un pays --</option>
+        </select>
+    </div>
+
+    <!-- notes cartes-->
+    <div class="blocks-container" id="blocks-container"></div>
+
+    <!-- galerie d'images -->
+    <div class="gallery-section" id="gallery-section" style="display: none;">
+        <h2 class="gallery-title">📸 Galerie Photos</h2>
+        <div class="gallery-grid" id="gallery-grid"></div>
+    </div>
+
+    <!-- vidéo présentation -->
+    <div class="video-container" id="video-container" style="display: none;">
+        <h2 class="video-title">🎬 Vidéo de présentation</h2>
+        <div class="video-wrapper">
+            <iframe id="travel-video" width="100%" height="400" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<!-- fenetre pour agrandire l'image selectionnée -->
+<div id="image-modal" class="modal">
+    <span class="modal-close">&times;</span>
+    <img class="modal-content" id="modal-img">
+</div>
+
+<div id="tooltip" class="tooltip"></div>
+<script src="script.js"></script>
+</body>
+</html>
